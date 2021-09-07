@@ -1,6 +1,37 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Uppgift 1"
 ---
 
-Testing etta tvåa trea
+## Vad är molnet? 
+
+Molnet även kallat the cloud är vad man kallar de servrar med mjukvara och databaser som man kommer åt via internet. Dessa servrar finns i olika datacenter runt om i världen. Det är inte enbart så att man kan spara data, man kan idag även köra program över molnet vilket innebär att man inte behöver installera en applikation eller spel på sin egen dator. Ett exempel på detta är Office 365 där allting körs via molnet. 
+
+Det finns primärt tre olika typer av molntjänster
+
+* Offentligt moln
+* Privat moln
+* Hybridmoln
+
+## Vilka för och nackdelar kan molnet introducera?
+
+### Fördelar
+
+* En fördel är att man har sina applikationer tillgängliga och kan köras utan avbrott vilket genererar en mycket bra användarupplevelse. 
+* Det är väldigt flexibelt att konfigurera om resurserna utefter de behov man behöver. 
+* Geo distribution vilket innebär att man kan använda datacenter runt om i världen för att korta ner svarstiderna för sin applikation eller spel. 
+* Kostnader - Man behöver själv inte lägga massa pengar på att köpa in dyra komponenter för att bygga en egen server, och man behöver inte lägga pengar på att underhålla servern med komponenter / uppdateringar / felhantering. 
+* Man betalar enbart för de resurser som man använder
+* Om man som exempelvis en e-handel går in för exempelvis black friday så kan man enkelt betala för mer resurser över en dag, eller vecka eller så länge man har behov utav det.
+
+### Nackdelar
+
+* Säkerheten i den form av att man aldrig helt kan släppa oron över att någon kommer åt känslig information
+* Man har mindre kontroll. De tjänster man betalar för är de man får, man kan inte själv gå in och påverka någonting.
+* Sen vet jag inte riktigt om detta bör ses som ett jätte stort problem 2021 men hastigheten på internetuppkopplingen hos slutanvändaren, ska man köra tyngre applikationer eller spel så krävs mer av uppkopplingen
+
+### Prisuppgifter 
+
+När det kommer till att uppgiften där vi ska jämföra priser mellan olika aktörer så tycker jag det känns som att alla de tre stora aktörerna Google, Amazong, Microsoft ligger relativt lika i sina priser på olika tjänster. 
+Men det är inte så konstigt i mitt tycke, för skull en sticka ut ur mängden och vara mycket dyrare så skulle inte dom andra sälja något. Om vi däremot kollar på mindre aktörer, som exempelvis misshosting.se eller bannhof så sjunker priserna ganska mycket. 
+Jag kan inte säga att jag vet exakt vad detta beror på, men jag antar att det blir lite sämre support om något skulle gå snett, samt att man kanske löper lite större risker när det kommer till säkerhet. Sen finns det garanterat inte samma resurser som de större företagen har, därav mindre valmöjligheter. 
