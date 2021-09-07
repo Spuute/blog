@@ -38,3 +38,5 @@ Jag kan inte säga att jag vet exakt vad detta beror på, men jag antar att det 
 
 ### Referenser
 https://www.techrepublic.com/article/is-the-cloud-really-just-someone-elses-computer/
+https://www.cloudhealthtech.com/blog/cloud-comparison-guide-glossary-aws-azure-gcp
+https://docs.microsoft.com/sv-se/learn/modules/fundamental-azure-concepts/
