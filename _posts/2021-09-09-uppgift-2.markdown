@@ -1,0 +1,58 @@
+---
+layout: post
+title:  "Uppgift 2 - Continous Integration"
+---
+
+## Vad är en CI pipeline?
+
+En CI pipeline är någonting som automatiskt ska sköta säkerhet och tester. Säkerhet i form av att om man sätter upp den rätt så kontrolleras varje commit och går endast in om den kan kompileras. 
+Man kan även lägga in så att alla applikationens unit tester körs och går igenom vid varje commit så man på så vis, om man har skrivit vettiga tester även där vet att man inte haft sönder applikationen med sin commit.
+En fördel med detta om man jobbar i team är att man kan minska merge konflikter. Om jag och någon / några fler jobbar på ett projekt på var sitt håll, och sen ska vi slå samman den kod vi jobbat med så är det stor chans att vi kommer
+åka på merge konflikter, men om vi har lagt in automatisering av att ständigt bygga koden man committar och inte låter den gå igenom om den inte bygger så minskar vi risken för konflikter, detta gäller dock om vi jobbar så att vi ständigt commitar
+till en branch och inte om man låter det gå en månad innan alla sätter sig och commitar. En annan fördel är att man alltid har en kod som bygger så den alltid går att testa!
+
+## Hur har du implementerat en CI pipeline i Github actions på ett existerande projekt, vilka steg har du gått igenom?
+
+Jag började med att forka Spacepark v2 från en tidigare kurs. Därefter klonade jag repot till min dator. Jag började för säkerhets skull att bygga applikationen för att se så allting fungerar som det ska vilket det gjorde, vilket innebär 
+att jag då kan vara helt säker på att de eventuella errors som uppstår när jag ska försöka implementera en CI pipeline på github inte beror på något fel i applikationen. 
+
+Jag påbörjade allting med att försöka skapa en .github mapp i repot, men den klagade då på att det redan fanns en. 
+Jag cd:ade in till den mappen och skapade en workflow mapp, cd:ade in till den och körde kommandot "touch ci-pipeline.yaml" för att skapa en workflow fil. 
+
+Därefter cd:ade jag tillbaka till root mappen och körde kommandot code . för att öppna den mappen i visual studio code. 
+
+## Beskriv din github action workflow YAML fil
+
+```yaml
+  name: CI Pipeline
+  on: [push]
+  jobs: 
+    build: 
+      name: Build 
+      runs-on: ubuntu-latest
+
+      steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-dotnet@v1
+        with: 
+          dotnet-version: 5.0.x
+      - run: dotnet build ./Source/SpacePark.sln
+      - run: dotnet test ./Source/RestApiTests
+```
+
+* name - Frivilligt om man vill använda, om man använder det så är detta namnet som kommer synas i tabben för Actions på github
+* on - Här får man ange vad som ska trigga vår workflow fil, i mitt fall har jag valt **push** för att trigga vid varje push till mitt repo
+* jobs - Samlar alla "jobb" som ska köras i vår workflow fil *notera att allt här under ligger indentat under jobs*
+* build - 
+* runs-on - Här får man ange vilket operativsystem som vår workflow ska köras i. I mitt fall ubuntu, men går även att använda macOS och windows. 
+* steps - Här anger jag vilka steg som ska köras
+* uses - Här anger jag vilket action som detta jobb ska använda, och det första är checkout vilket är ett action som checkar ut repositoryt och laddar ner det för att kunna köras mot min kod. 
+* uses - Nästa steg här har lite fler parametrar, bland annat with där vi kan ange vilken version av dotnet vi vill installera. I mitt fall använder jag 5.0
+* run - Berättar vilka kommandon som ska köras, i mitt fall kör jag först en build på vår solution där jag anger vart solution filen ligger och vilken som ska köras.
+* run - Här kör jag dotnet test och anger vart jag har mina unit tester vilket resulterar i att även alla tester körs vid varje commit till repot
+
+### Källhänvisning
+
+* https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions
+* https://academediase.sharepoint.com/sites/TEAMS_teh_got_yhpgbsnh20_kg/Delade%20dokument/Forms/AllItems.aspx?id=%2Fsites%2FTEAMS%5Fteh%5Fgot%5Fyhpgbsnh20%5Fkg%2FDelade%20dokument%2FKurs%206%20%2D%20Utveckling%20av%20molnbaserade%20applikationer%2FRecordings%2FGithub%20actions%20demo%2D20210908%5F133251%2DM%C3%B8deoptagelse%2Emp4&parent=%2Fsites%2FTEAMS%5Fteh%5Fgot%5Fyhpgbsnh20%5Fkg%2FDelade%20dokument%2FKurs%206%20%2D%20Utveckling%20av%20molnbaserade%20applikationer%2FRecordings
+* https://www.youtube.com/watch?v=1er2cjUq1UI
