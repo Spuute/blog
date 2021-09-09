@@ -36,3 +36,7 @@ När det kommer till att uppgiften där vi ska jämföra priser mellan olika akt
 Men det är inte så konstigt i mitt tycke, för skull en sticka ut ur mängden och vara mycket dyrare så skulle inte dom andra sälja något. Om vi däremot kollar på mindre aktörer, som exempelvis misshosting.se eller bannhof så sjunker priserna ganska mycket. 
 Jag kan inte säga att jag vet exakt vad detta beror på, men jag antar att det blir lite sämre support om något skulle gå snett, samt att man kanske löper lite större risker när det kommer till säkerhet. Sen finns det garanterat inte samma resurser som de större företagen har, därav mindre valmöjligheter. 
 
+### Referenser
+https://www.techrepublic.com/article/is-the-cloud-really-just-someone-elses-computer/
+https://www.cloudhealthtech.com/blog/cloud-comparison-guide-glossary-aws-azure-gcp
+https://docs.microsoft.com/sv-se/learn/modules/fundamental-azure-concepts/
