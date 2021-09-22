@@ -101,7 +101,7 @@ Nu kan jag inte direkt påstå att jag har kunskap eller erfarenhet av hur mycke
 
 Om jag ska beräkna kostnad för denna CosmosDB serverless i en liten skala så väljer jag 1 miljon RUs och 10gb Transactional Storage. Då hamnar jag på en total månadskostnad på $2.78
 
-BILD
+![alt text](https://github.com/Spuute/blog/blob/main/img/liten.png "liten")
 
 ### Stor skala
 
