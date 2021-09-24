@@ -1,6 +1,6 @@
 ## Inledning
 
-lorem
+Denna gången valde jag att gå på Silver steget då jag inte hade fullt så mycket tid som jag hade önskat av olika anledningar. Jag har jobbat tillsammans med Jonas även denna gång. 
 
 ## Beskriv kort applikationen, vad gör den?
 
@@ -86,7 +86,8 @@ innan det slutligen slog mig att det kanske blir någon form av konflikt när ma
 trötthet och hast namn på WORKDIR till ee och då fungerade det magiskt. Detta är någonting som jag lärt mig en läxa av och kommer vara väldigt noga med att 
 kontrollera i framtiden. 
 
-Därefter följade jag en guide för att publicera detta från VS Code: LÄNKLÄNKLÄNKLÄNKLÄNK 
+Därefter följade jag en guide för att publicera detta från VS Code: https://code.visualstudio.com/docs/containers/app-service
+Detta steg gick väldigt smärtfritt, det känns nästan lite som hokuspokus då det är så mycket som händer bara genom några få knapptryckningar. Det finns väldigt bra plugins till alla program idag som verkligen underlättare utveckling, jag misstänker att dessa steg skulle vara betydligt mer komplicerade för ett par år sedan. 
 
 ## Vad skulle det kosta att driva detta, stort samt litet
 
