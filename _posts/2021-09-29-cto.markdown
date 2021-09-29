@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Nätverk"
+---
+
+Hej CTO,
+
+Jag är helt med på ditt argument till varför vi inte bör flytta vår interna applikation till molnet då det finns känslig data som ej får skickas över internet med risk för att läcka, men jag känner till en lösning som möjliggör för oss att faktiskt kunna flytta ut vår applikation till molnet, och det är en tjänst från Microsoft som heter Private Link, låt mig berätta mer.
+
+Om vi börjar med att sätta upp ett privat moln med hjälp av Azure Private Network (VNet) så kan vi länka det till vårat interna nätverk. När vi har vårat privata moln redo så kan vi använda oss av Azure Private Link för att nå vår PaaS tjänst genom en privat endpoint vilket då innebär att all trafik till och från vår applikation inte behöver gå över ett publikt internet, det kommer istället att gå säkert genom Microsofts backbone nätverk. Vi kommer att kunna nå applikationen utan en publik IP adress. När man använder sig av en privat endpoint så är all inkommande trafik begränsad till den specifika Private Link resursen. 
+
