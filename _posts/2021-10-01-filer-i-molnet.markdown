@@ -14,7 +14,7 @@ dotnet sln add
 
 ## Diagram för data
 
-lorem
+[diagram](https://github.com/Spuute/blog/blob/main/img/lesson08.drawio.png?raw=true)
 
 Bilden här illustrerar när jag kör applikationerna "offline" via localhost. 
 
@@ -118,7 +118,7 @@ I min Images.cshtml är koden så simpel den bara kan bli.
 ```
 Jag loopar helt enkelt bara igenom alla uri:s från listan jag skapade och därefter lägger jag in dom som en bild, och på detta vis så kommer alla bilder i min blob att visas en efter en. Detta kan man såklart göra snyggare om man nu ska göra detta på riktigt, men av tidsskäl då dessa uppgifter ska gå fort så valde jag att bara ha det så simpelt det kan vara men ändå ge det resultat som uppgiften kräver. 
 
-BILD
+![webapp](https://github.com/Spuute/blog/blob/main/img/webapp1.png?raw=true)
 
 ## Vad skulle det kosta att driva en applikation som sparar och läser filer i Azure?
 
