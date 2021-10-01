@@ -14,7 +14,7 @@ dotnet sln add
 
 ## Diagram för data
 
-[diagram](https://github.com/Spuute/blog/blob/main/img/lesson08.drawio.png?raw=true)
+![diagram](https://github.com/Spuute/blog/blob/main/img/lesson08.drawio.png?raw=true)
 
 Bilden här illustrerar när jag kör applikationerna "offline" via localhost. 
 
