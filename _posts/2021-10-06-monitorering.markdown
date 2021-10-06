@@ -127,5 +127,7 @@ Kolla om det går att skriva någonting om inputvalidering här!!
 
 ## Förklara dina queries, vad gör dom? Varför är denna data som tas fram intressant?
 
-lorem
+Min första kustoquery tar fram och visar svarstiden på sidan i ett diagram med olika staplar
+
+![kustodiagram]()
 
