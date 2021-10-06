@@ -129,5 +129,11 @@ Kolla om det går att skriva någonting om inputvalidering här!!
 
 Min första kustoquery tar fram och visar svarstiden på sidan i ett diagram med olika staplar
 
+```sql
+requests
+| summarize AverageDuration=avg(duration) by operation_Name
+| order by AverageDuration desc
+```
+
 ![kustodiagram](https://github.com/Spuute/blog/blob/main/img/diagramAI.png?raw=true)
 
