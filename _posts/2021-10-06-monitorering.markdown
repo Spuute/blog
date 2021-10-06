@@ -30,7 +30,7 @@ För denna uppgift så har jag valt att ta den tidigare applikationen jag gjorde
 
 ## Diagram över hur applikationen är kopplad till andra tjänster
 
-![diagram](https://github.com/Spuute/blog/blob/main/img/lesson08.drawio.png?raw=true)
+![diagram](https://github.com/Spuute/blog/blob/main/img/Untitled%20Diagram.drawio-2.png?raw=true)
 
 ## Beskriv koden med fokus på den del som rör din log implementation
 
