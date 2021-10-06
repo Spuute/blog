@@ -102,6 +102,19 @@ public class dishesModel : PageModel
         }
 ```
 
+Normalt när man skapar en asp.net core web applikation så ser koden ut så här 
+
+```csharp
+CreateHostBuilder(args).Build().Run();
+```
+
+Jag har skapat en variabel vid namn host som jag sedan tilldelar de första stegen, men väljer att bryta ut .Run för att kunna köra den senare. 
+Sen har jag skapat en variabel logger som jag sen tilldelar host med Services och GetRequiredService och därefter ILogger
+
+Sen börjar jag med att logga att applikationen har startat och därefter kör jag host.Run. 
+
+
+
 ## Funderar på hur loggning av din applikation kan avhjälpa säkerhetsproblem i din applikation
 
 Kolla om det går att skriva någonting om inputvalidering här!!
