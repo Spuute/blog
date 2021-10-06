@@ -7,7 +7,7 @@ title:  "Monitorering"
 
 Denna lektion ska vi lägga till logging till en applikation, och detta genom Microsoft Azure Application Insights
 
-## Implementering av Application Insights
+### Implementering av Application Insights
 
 Det första jag gjorde var att lägga till ett NuGet paket till mitt projekt, och paketet i fråga är Microsoft.ApplicationInsights.AspNetCore. Därefter lägger jag till den i min Startup.cs och under ConfigureServices
 
@@ -120,8 +120,6 @@ Jag har skapat en variabel vid namn host som jag sedan tilldelar de första steg
 Sen har jag skapat en variabel logger som jag sen tilldelar host med Services och GetRequiredService och därefter ILogger
 
 Sen börjar jag med att logga att applikationen har startat och därefter kör jag host.Run. 
-
-
 
 ## Funderar på hur loggning av din applikation kan avhjälpa säkerhetsproblem i din applikation
 
