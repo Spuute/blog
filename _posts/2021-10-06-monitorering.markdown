@@ -65,23 +65,23 @@ public class dishesModel : PageModel
     }
 ```
 
-    Jag skapar en konstruktor som jag sedan använder för att injecera ILogger och tilldelar sedan min _logger den. 
+Jag skapar en konstruktor som jag sedan använder för att injecera ILogger och tilldelar sedan min _logger den. 
 
-    Sen lägger jag till ett try-catch block där jag lägger in min kod, och väljer därefter att köra en LogInformation som loggar när man har läst in allt från databasen. 
-    och i min catch del så har jag en LogError som kommer logga ett exeption om det skulle bli något sådant. 
+Sen lägger jag till ett try-catch block där jag lägger in min kod, och väljer därefter att köra en LogInformation som loggar när man har läst in allt från databasen. 
+och i min catch del så har jag en LogError som kommer logga ett exeption om det skulle bli något sådant. 
 
-    När det kommer till ILogger så finns det några olika nivåer loggar
+När det kommer till ILogger så finns det några olika nivåer loggar
 
-    * .LogTrace
-    * .LogDebug
-    * .LogInformation
-    * .LogWarning
-    * .LogError
-    * .LogCritical
+* .LogTrace
+* .LogDebug
+* .LogInformation
+* .LogWarning
+* .LogError
+* .LogCritical
 
-    Jag har valt att använda information till sånt som helt enkelt visar flödet i min applikation, som när man läst in data från databasen, och error ifall det skulle komma ett exception. 
+Jag har valt att använda information till sånt som helt enkelt visar flödet i min applikation, som när man läst in data från databasen, och error ifall det skulle komma ett exception. 
 
-    Jag har även valt att logga när min applikation startas och det gör jag genom att ha modifierat min Main metod en aning. 
+Jag har även valt att logga när min applikation startas och det gör jag genom att ha modifierat min Main metod en aning. 
 
 ```csharp
     public static void Main(string[] args)
