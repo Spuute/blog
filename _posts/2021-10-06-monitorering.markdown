@@ -139,7 +139,7 @@ requests
 
 ## Referenslänkar
 
-* Logging in .NET core 3.0 and beyond - Video - ![link](https://www.youtube.com/watch?v=oXNslgIXIbQ)
-* ASP.NET Core 3.1: Saving Logs in Application Insights - Video - ![link](https://www.youtube.com/watch?v=m7E5itCkCuA)
-* Logs to Monitor for Security Analytics - ![link](https://logz.io/blog/logs-to-monitor-for-security-analytics/)
+* Logging in .NET core 3.0 and beyond - Video - [link](https://www.youtube.com/watch?v=oXNslgIXIbQ)
+* ASP.NET Core 3.1: Saving Logs in Application Insights - Video - [link](https://www.youtube.com/watch?v=m7E5itCkCuA)
+* Logs to Monitor for Security Analytics - [link](https://logz.io/blog/logs-to-monitor-for-security-analytics/)
 
