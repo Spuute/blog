@@ -63,7 +63,7 @@ public class dishesModel : PageModel
             }
         }
     }
-    ```
+```
 
     Jag skapar en konstruktor som jag sedan använder för att injecera ILogger och tilldelar sedan min _logger den. 
 
