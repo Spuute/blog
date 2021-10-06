@@ -22,7 +22,9 @@ Här kan man välja att lägga till sin Instrumentation nyckel som en parameter 
     "InstrumentationKey": "min-kod-ligger-här"
   }
 ```
+Nu är ILogger redo att användas med applikationen. 
 
+Värt att notera är även att det finns mer avancerade loggramverk där ute. 
 
 ## Beskriv kort applikationen, vad gör den?
 
@@ -123,7 +125,11 @@ Sen börjar jag med att logga att applikationen har startat och därefter kör j
 
 ## Funderar på hur loggning av din applikation kan avhjälpa säkerhetsproblem i din applikation
 
-Kolla om det går att skriva någonting om inputvalidering här!!
+Med tanke på hur stort internet är idag, och med alla nya hot som ständigt tillkommer så behöver man verkligen vara på sin spets när det kommer till säkerheten. 
+
+I min applikation, precis som i alla andra så är databasen extra mottaglig för attacker. All aktivitet mot databasen som exempelvis querys bör vara loggas.
+Att kombinera databas-transaktions loggar med replikeringsloggar och eventloggar ger en tydlig bild över sekretess, datastatus och integritet.
+Att logga databasen underlättar och hjälper till med att hitta orsaken / orsakerna till en eventuell incident. 
 
 ## Förklara dina queries, vad gör dom? Varför är denna data som tas fram intressant?
 
@@ -136,6 +142,14 @@ requests
 ```
 
 ![kustodiagram](https://github.com/Spuute/blog/blob/main/img/diagramAI.png?raw=true)
+
+Nästa query väljer att visa allt med severitylevel större än eller lika med 2 och sorteras baserat på fallande tidpunkt.
+
+```sql
+traces | where severityLevel >= 2 | order by timestamp desc 
+```
+
+
 
 ## Referenslänkar
 
