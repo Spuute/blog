@@ -80,6 +80,14 @@ När det kommer till ILogger så finns det några olika nivåer loggar
 * .LogCritical
 
 Jag har valt att använda information till sånt som helt enkelt visar flödet i min applikation, som när man läst in data från databasen, och error ifall det skulle komma ett exception. 
+Rätt ur lådan så att säga så fungerar ingen av ovanstående som ligger på en lägre nivå än Warnings med Application Insights, så för att fixa det har jag modifierat min appsettings.json med följande kod
+
+```json
+"LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+```
 
 Jag har även valt att logga när min applikation startas och det gör jag genom att ha modifierat min Main metod en aning. 
 
