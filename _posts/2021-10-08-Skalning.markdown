@@ -1,0 +1,58 @@
+---
+layout: post
+title:  "Skalning"
+---
+
+## Inledning
+
+Denna lektion handlar om skalning av applikationer, och jag kommer här att gå igenom de frågor som vi har fått att svara på till detta inlägg.
+
+## Förklara skillnaden på att skala en applikation Vertikalt vs. Horisontellt
+
+När man skalar en applikation vertikalt så innebär det som jag i ett tidigare inlägg skrivit att man ökar prestandan i den maskin som sin applikation för tillfället ligger och körs på. 
+Man uppgraderar helt enkelt servern med mer ram, processor, ssd. 
+
+När man skalar en applikation horisontellt så innebär det att man helt enkelt snurrar upp en till server och genom detta så behöver man inte utöka komponenterna i servern utan det räcker med att snurra upp en till liten server. 
+
+[scaling]()
+
+## Hur påverkar skalning horisontellt vs vertikalt prisbilden för en applikation i Azure?
+
+### För en App Service
+
+Om vi nu tänker oss att vi har en stor applikation och kör den 730 timmar i månaden samt går på Tier Premium V3, och börjar med den lägsta instansen hårdvara så får vi 
+
+* 2 Cores
+* 8 GB Ram
+* 250 GB lagring
+
+Detta ger oss en månadskostnad på $122.24 
+
+Om vi sen behöver skala upp lite och uppgraderar till instans 2 av 3 på hårdvara så får vi följande specs 
+
+* 4 Cores
+* 16 GB Ram
+* 250 GB lagring
+
+Detta ger oss en månadskostnad på $245.28
+
+Sen behöver vi skala upp ytterligare och går på den största instansen vilket då ger oss följande hårdvara
+
+* 8 Cores
+* 32 GB Ram
+* 250 GB lagring
+
+Detta ger oss då en månadskostnad på $490.56 
+
+Om vi istället skulle skala horisontellt så kan vi ta vår lägsta instans och snurra upp en till vartefter behover ökas
+
+$122.24 * 4 = $488,96
+
+Nu är jag högst osöker på om man verkligen kan tänka att fyra lägsta instanser blir samma som en av den största, det kanske inte ens krävs lika många små eller så krävs fler, det låter jag vara osagt men om vi hårddrar det hela så ser vi att det blir 
+$1.6 billigare per månad genom horisontell skalning. 
+
+### För en Virtuell Maskin
+
+## Alla Azure App Service plans ger inte möjligheten att skala, vilka ger den möjligheten?
+
+lorem
