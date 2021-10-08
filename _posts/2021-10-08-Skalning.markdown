@@ -55,7 +55,34 @@ $1.6 billigare per månad genom horisontell skalning.
 
 ### För en Virtuell Maskin
 
-När det kommer till virtuella maskiner 
+När det kommer till virtuella maskiner så finns det betydligt fler konfigurationer att gå på, så jag kommer inte att ta upp alla steg här. 
+Men jag börjar med att välja att snurra upp den i nordeuropa samt linux med ubuntu. 
+
+Om vi sedan kollar på den absolut lägsta instansen (A0) så hamnar vi på följande specs
+
+* 1 Core
+* 0.75 GB Ram
+* 20 GB temporär lagring
+
+Detta kommer till en månadskostnad på $14.60
+
+Om vi sedan väljer en instans som ligger lite mellan max och min så kör vi på (E32s v3) med följande specs
+
+* 32 vCPU
+* 256 GB Ram
+* 512 GB Temporär lagring
+
+Vilket då ger mig en månadskostnad på $1,646.88 
+
+Sen kan vi safta på ordentligt och gå på (M32dms) med följande specs
+
+* 32 vCPU
+* 875 GB Ram
+* 1024 GB temporär lagring
+
+Och då hamnar månadskostnaden på $5,383.80 
+
+
 
 ## Alla Azure App Service plans ger inte möjligheten att skala, vilka ger den möjligheten?
 
