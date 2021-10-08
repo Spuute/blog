@@ -20,6 +20,8 @@ När man skalar en applikation horisontellt så innebär det att man helt enkelt
 
 ### För en App Service
 
+#### Jag har i Azure Price Calculator valt att snurra upp detta i nordeuropa med linux. 
+
 Om vi nu tänker oss att vi har en stor applikation och kör den 730 timmar i månaden samt går på Tier Premium V3, och börjar med den lägsta instansen hårdvara så får vi 
 
 * 2 Cores
@@ -52,6 +54,8 @@ Nu är jag högst osöker på om man verkligen kan tänka att fyra lägsta insta
 $1.6 billigare per månad genom horisontell skalning. 
 
 ### För en Virtuell Maskin
+
+När det kommer till virtuella maskiner 
 
 ## Alla Azure App Service plans ger inte möjligheten att skala, vilka ger den möjligheten?
 
