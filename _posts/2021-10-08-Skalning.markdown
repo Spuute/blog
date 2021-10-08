@@ -87,3 +87,8 @@ Och då hamnar månadskostnaden på $5,383.80
 ## Alla Azure App Service plans ger inte möjligheten att skala, vilka ger den möjligheten?
 
 Kommer under helgen
+
+## Referenslänkar
+
+<a href="https://www.cloudzero.com/blog/horizontal-vs-vertical-scaling">Horisontal vs vertical scaling</a>
+<a href="https://azure.microsoft.com/en-us/pricing/calculator/?&ef_id=CjwKCAjw2P-KBhByEiwADBYWCqYrFmxxkDpFGg2trH1Tz_xJJMmSHnkJ1GfFXIzwmMzUN7FEn1xbdBoCdvEQAvD_BwE:G:s&OCID=AID2200261_SEM_CjwKCAjw2P-KBhByEiwADBYWCqYrFmxxkDpFGg2trH1Tz_xJJMmSHnkJ1GfFXIzwmMzUN7FEn1xbdBoCdvEQAvD_BwE:G:s&gclid=CjwKCAjw2P-KBhByEiwADBYWCqYrFmxxkDpFGg2trH1Tz_xJJMmSHnkJ1GfFXIzwmMzUN7FEn1xbdBoCdvEQAvD_BwE">Azure Price Calculator</a>
