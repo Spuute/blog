@@ -86,4 +86,4 @@ Och då hamnar månadskostnaden på $5,383.80
 
 ## Alla Azure App Service plans ger inte möjligheten att skala, vilka ger den möjligheten?
 
-lorem
+Kommer under helgen
