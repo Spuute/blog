@@ -14,7 +14,7 @@ Man uppgraderar helt enkelt servern med mer ram, processor, ssd.
 
 När man skalar en applikation horisontellt så innebär det att man helt enkelt snurrar upp en till server och genom detta så behöver man inte utöka komponenterna i servern utan det räcker med att snurra upp en till liten server. 
 
-[scaling]()
+![scaling](https://github.com/Spuute/blog/blob/main/img/scaling.drawio.png?raw=true)
 
 ## Hur påverkar skalning horisontellt vs vertikalt prisbilden för en applikation i Azure?
 
