@@ -86,7 +86,24 @@ Och då hamnar månadskostnaden på $5,383.80
 
 ## Alla Azure App Service plans ger inte möjligheten att skala, vilka ger den möjligheten?
 
-Kommer under helgen
+Möjligheten till skalning av en App Service ser ut som följer
+
+Här är en översikt över en linuxbaserad App Service med nordeuropa som region, jag är osäker men jag tror att det är snarlika möjligheter oavsett vilken region man väljer. 
+
+![prices]()
+
+Som vi kan se så har man inte möjlighet till horisontell skalning när man ligger under Free Tier. Sen kan vi se att desto större plan man väljer att använda desto fler instanser har man möjlighet att skala ut med. 
+
+När det kommer till att skala upp så kan man se att man har följande möjligheter till att skala upp 
+
+![scaleup]()
+
+och under Production har man följande möjligheter
+
+![scaleout]()
+
+
+
 
 ## Referenslänkar
 
