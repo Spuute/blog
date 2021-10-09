@@ -90,17 +90,17 @@ Möjligheten till skalning av en App Service ser ut som följer
 
 Här är en översikt över en linuxbaserad App Service med nordeuropa som region, jag är osäker men jag tror att det är snarlika möjligheter oavsett vilken region man väljer. 
 
-![prices]()
+![prices](https://github.com/Spuute/blog/blob/main/img/del1.png?raw=true)
 
 Som vi kan se så har man inte möjlighet till horisontell skalning när man ligger under Free Tier. Sen kan vi se att desto större plan man väljer att använda desto fler instanser har man möjlighet att skala ut med. 
 
 När det kommer till att skala upp så kan man se att man har följande möjligheter till att skala upp 
 
-![scaleup]()
+![scaleup](https://github.com/Spuute/blog/blob/main/img/del2.png?raw=true)
 
 och under Production har man följande möjligheter
 
-![scaleout]()
+![scaleout](https://github.com/Spuute/blog/blob/main/img/del3.png?raw=true)
 
 
 
